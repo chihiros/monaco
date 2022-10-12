@@ -8,3 +8,14 @@
 |  |  |
 (__)__)
 ```
+
+
+# install
+```sh
+go install github.com/chihiros/monaco@latest
+```
+
+# using
+```sh
+monaco オマエモナー
+```

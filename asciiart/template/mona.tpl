@@ -8,7 +8,7 @@
 
 {{ block "mona_back" . }}
  ∧___∧   /{{ printOverLine . }}
-(     ) < {{ . }}
+(     ) < {{ echo . -}}
 (  O  )  \{{ printUnderLine . }}
 |  |  |
 (__)__)

@@ -36,7 +36,6 @@ to quickly create a Cobra application.`,
 
 func monacoVersion() {
 	aa := asciiart.NewAsciiArt([]string{curver.GetVersion()})
-	aa.Name = "mona_back"
 	aa.Print()
 }
 

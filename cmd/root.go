@@ -3,6 +3,7 @@ package cmd
 import (
 	"os"
 
+	"github.com/chihiros/monaco/asciiart"
 	"github.com/harakeishi/curver"
 	"github.com/spf13/cobra"
 )
@@ -25,12 +26,18 @@ to quickly create a Cobra application.`,
 			return err
 		}
 		if version {
-			curver.EchoVersion()
+			monacoVersion()
 			return nil
 		}
 
 		return nil
 	},
+}
+
+func monacoVersion() {
+	aa := asciiart.NewAsciiArt([]string{curver.GetVersion()})
+	aa.Name = "mona_back"
+	aa.Print()
 }
 
 func Execute() {

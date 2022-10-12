@@ -10,7 +10,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "monaco",
-	Args:  cobra.MinimumNArgs(1),
+	Args:  cobra.MinimumNArgs(0),
 	Short: "A brief description of your application",
 	Long: `A longer description that spans multiple lines and likely contains
 examples and usage of using your application. For example:

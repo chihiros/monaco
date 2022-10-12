@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 
+	"github.com/harakeishi/curver"
 	"github.com/spf13/cobra"
 )
 

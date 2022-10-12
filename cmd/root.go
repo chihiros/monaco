@@ -19,9 +19,17 @@ to quickly create a Cobra application.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
-	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Printf("Welcome to monaco!!\n")
-		fmt.Printf("Please type 'monaco help' to see the usage.\n")
+	RunE: func(cmd *cobra.Command, args []string) error {
+		version, err := cmd.Flags().GetBool("version")
+		if err != nil {
+			return err
+		}
+		if version {
+			curver.EchoVersion()
+			return nil
+		}
+
+		return nil
 	},
 }
 
